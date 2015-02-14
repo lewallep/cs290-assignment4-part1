@@ -6,10 +6,10 @@ ini_set('display_errors', 'On');
 <?php
 
 	function makeMulTable(&$validatedVariables) {
-		$minCand = $_GET['1'];
-		$maxCand = $_GET['2'];
-		$minMul = $_GET['3'];
-		$maxMul = $_GET['4'];
+		$minCand = $_GET['min-multiplicand'];
+		$maxCand = $_GET['max-multiplicand'];
+		$minMul = $_GET['min-multiplier'];
+		$maxMul = $_GET['max-multiplier'];
 
 		if($minCand == NULL) {
 			echo "<p>Missing parameter [min-multiplicand]</p>";
