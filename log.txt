@@ -5,3 +5,7 @@ Tasks: I was working on the multtable portion of the assignment.
 Start: Fri, 13 Feb 2015 12:30:14
 End: Fri, 13 Feb 2015 13:44:04 -0800
 Tasks: Multtable.php is done.
+
+Start Sat, 14 Feb 2015 10:47:18 -0800
+End: Sat, 14 Feb 2015 15:47:18 -0800
+Tasks: finished part 1 of assignment 4.
