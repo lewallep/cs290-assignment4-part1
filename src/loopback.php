@@ -13,11 +13,9 @@ ini_set('display_errors', 'On');
 
 	switch ($method) {
 		case 'PUT':
-			echo "<p>PUT detected.</p>";
+			//echo "<p>PUT detected.</p>";
 			break;
 		case 'GET':
-			echo "<p>GET detected.</p>";
-			
 			$get_length = count($_GET); 
 
 			if ($get_length == 0) {
@@ -25,7 +23,7 @@ ini_set('display_errors', 'On');
 				echo "<p>{\"Type\":\"[GET]\", \"parameters\":null}</p>";
 			}
 			else {
-
+				//echo "<p>GET detected.</p>";
 				$out['Type'] = "GET";
 				$append['Parameters'] = $_GET;
 
@@ -37,7 +35,7 @@ ini_set('display_errors', 'On');
 
 			break;
 		case 'POST':
-			echo "<p>POST detected.</p>";
+			//echo "<p>POST detected.</p>";
 
 			$post_length = count($_POST);
 

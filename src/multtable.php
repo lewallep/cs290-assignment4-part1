@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL);
-ini_set('display_errors', 'On');
+//ini_set('display_errors', 'On');
 ?>
 
 <?php
@@ -33,7 +33,7 @@ ini_set('display_errors', 'On');
 			$minCand = intval($minCand);
 		}
 		else {
-			echo "<p>min-multiplicand must be an integer.</p>";
+			//echo "<p>min-multiplicand must be an integer.</p>";
 			$validatedVariables = false;
 		}
 
@@ -41,7 +41,7 @@ ini_set('display_errors', 'On');
 			$maxCand = intval($maxCand);
 		}	
 		else {
-			echo "<p>max-multiplicand must be an integer.</p>";
+			//echo "<p>max-multiplicand must be an integer.</p>";
 			$validatedVariables = false;
 		}	
 
@@ -49,7 +49,7 @@ ini_set('display_errors', 'On');
 			$minMul = intval($minMul);
 		}		
 		else {
-			echo "<p>min-multiplier must be an integer.</p>";
+			//echo "<p>min-multiplier must be an integer.</p>";
 			$validatedVariables = false;
 		}
 
@@ -57,26 +57,26 @@ ini_set('display_errors', 'On');
 			$maxMul = intval($maxMul);
 		}
 		else {
-			echo "<p>max-multiplier must be an interger.</p>";
+			//echo "<p>max-multiplier must be an interger.</p>";
 			$validatedVariables = false;
 		}
 
 		//checking to see if the variables are integers.
 		if (is_int($minCand) == false) {
-			echo "<p>min-multiplicand must be an integer.</p>";
-			//$validatedVariables = false;
+			echo "<p>[min-multiplicand] must be an integer.</p>";
+			$validatedVariables = false;
 		}
 		if (is_int($maxCand) == false) {
-			echo "<p>max-multiplicand must be an integer.</p>";
-			//$validatedVariables = false;
+			echo "<p>[max-multiplicand] must be an integer.</p>";
+			$validatedVariables = false;
 		}
 		if (is_int($minMul) == false) {
-			echo "<p>min-multiplier must be an integer.</p>";
-			//$validatedVariables = false;
+			echo "<p>[min-multiplier] must be an integer.</p>";
+			$validatedVariables = false;
 		}
 		if (is_int($maxMul) == false) {
-			echo "<p>max-multiplier must be an interger.</p>";
-			//$validatedVariables = false;
+			echo "<p>[max-multiplier] must be an interger.</p>";
+			$validatedVariables = false;
 		}	
 
 		if ($validatedVariables == true) {
